@@ -14129,8 +14129,8 @@
         );
       }
       const me = "./static/media/Poster2.png",
-        ge = "./static/media/paper.ef0a96da7b01aa85f199.pdf",
-        ye = "./static/media/supplementary.2cb2ac0fdfaa02e21e60.pdf";
+        ge = "./static/media/sample_paper.ef0a96da7b01aa85f199.pdf",
+        ye = "./static/media/sample_supplementary.2cb2ac0fdfaa02e21e60.pdf";
       var be = n(579);
       const ve = () => {
           const e = {
@@ -14284,7 +14284,7 @@
                       className: "nav-btn",
                       style: e,
                       children: (0, be.jsx)("a", {
-                        href: "https://github.com/baskargroup/flowbench-tools",
+                        href: "https://github.com/baskargroup/flowbench-tools_sample",
                         className: "nav-link",
                         target: "_blank",
                         rel: "noopener noreferrer",
