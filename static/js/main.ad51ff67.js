@@ -14128,9 +14128,9 @@
           r
         );
       }
-      const me = "./static/media/Poster2.png",
-        ge = "./static/media/paper.ef0a96da7b01aa85f199.pdf",
-        ye = "./static/media/supplementary.2cb2ac0fdfaa02e21e60.pdf";
+      const me = "static/media/Poster2.png",
+        ge = "static/media/paper.ef0a96da7b01aa85f199.pdf",
+        ye = "static/media/supplementary.2cb2ac0fdfaa02e21e60.pdf";
       var be = n(579);
       const ve = () => {
           const e = {
