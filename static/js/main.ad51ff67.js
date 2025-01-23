@@ -14490,11 +14490,7 @@
                           alt: "GIF",
                           style: { maxWidth: "80%", marginTop: "1rem" },
                         }),
-                        (0, be.jsx)("img", {
-                          src: Te,
-                          alt: "GIF",
-                          style: { maxWidth: "30%", marginTop: "1rem" },
-                        }),
+                     
                         (0, be.jsx)("p", {
                           style: {
                             textAlign: "center",
