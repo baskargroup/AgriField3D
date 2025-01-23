@@ -29033,7 +29033,7 @@
       var At = n(2382);
       n.p, n.p;
       const Tt = n.p + "static/media/L2.0730fcc3a323e985b6d1.png",
-        zt = n.p + "static/media/Linfinity.9043e1f3f1e3fe3b6440.png",
+        zt = n.p + "static/media/Procedural_Models_Samples.png",
         Mt = n.p + "static/media/deeponet_loss.765d949e88caefd573ae.png",
         jt = n.p + "static/media/mse.9d6272505552f889947a.png",
         Ct = [
@@ -29246,95 +29246,10 @@
                               fontSize: "2rem",
                               fontFamily: "Times New Roman",
                             },
-                            children: "Benchmark Results",
+                            children: "Procedural Models",
                           }),
                         }),
-                        (0, be.jsx)("br", {}),
-                        (0, be.jsx)("p", {
-                          style: {
-                            color: "#540",
-                            fontSize: "1rem",
-                            textAlign: "justify",
-                            textAlignLast: "center",
-                          },
-                          children: (0, be.jsx)("p", {
-                            style: {
-                              color: "#540",
-                              fontSize: "1rem",
-                              textAlign: "justify",
-                              textAlignLast: "center",
-                            },
-                            children:
-                              "We report baseline results on training a suite of the most common neural PDE solvers. We studied the following (neural operator) frameworks and report results on the 2D LDC-NS: (a) Fourier Neural Operator (FNO) [1], (b) Convolutional Neural Operators (CNO) [2], (c) DeepONet [3], (d) Geometric DeepONet [4], (e) Wavelet Neural Operator (WNO) [5], (f) scOT [6], and (g) poseidon [6]. All models were trained on a single A100 80GB GPU, batch size 8, Adam optimizer, and run for 400 epochs.               ",
-                          }),
-                        }),
-                        (0, be.jsxs)("div", {
-                          style: { textAlign: "center" },
-                          children: [
-                            (0, be.jsx)("p", {
-                              children: (0, be.jsx)(St, {
-                                children:
-                                  " In addition to MSE, we now also include $L_2$ and $L_\\infty$ metrics, which have been used in fluids literature, and are defined as: ",
-                              }),
-                            }),
-                            (0, be.jsx)(St, {
-                              children:
-                                "$$\n                  L_2 = \\sqrt{\\frac{\\sum_{i = 1}^{n}(y - y^{'})^{2}}{\\sum_{i = 1}^{n} y^{'2}}} \\quad \\text{(L}_2 \\text{ relative error)}\n                  $$",
-                            }),
-                            (0, be.jsx)(St, {
-                              children:
-                                "$$\n                  L_\\infty  = \\frac{\\max \\left| y - y^{'} \\right|}{\\max \\left| y^{'} \\right|} \\quad \\text{(L}_\\infty \\text{ relative error)}\n                  $$",
-                            }),
-                            (0, be.jsx)(St, {
-                              children:
-                                "$$\n                  y = \\texttt{predicted solution} \\quad \\text{and} \\quad y^{'} = \\texttt{ground truth}\n                  $$",
-                            }),
-                          ],
-                        }),
-                        (0, be.jsx)("p", {
-                          style: {
-                            color: "#540",
-                            fontSize: "1rem",
-                            textAlign: "justify",
-                            textAlignLast: "center",
-                          },
-                          children:
-                            "We use 2 different test/train splits (Standard and Hard). The Standard split is a random 80-20 split, where the training set is further divided into 80-20 training and validation subsets. The Hard split is an extrapolatory split, where the 10% of data with the lowest Reynolds numbers and the 10% with the highest Reynolds numbers are reserved for the testing set, while the remaining data is split randomly into training and validation sets using the standard 80-20 approach. ",
-                        }),
-                        (0, be.jsx)("br", {}),
-                        (0, be.jsx)("br", {}),
-                        (0, be.jsx)("img", {
-                          src: jt,
-                          alt: "GIF",
-                          style: { maxWidth: "60%", marginTop: "1rem" },
-                        }),
-                        (0, be.jsx)("p", {
-                          style: {
-                            textAlign: "center",
-                            fontStyle: "italic",
-                            fontFamily: "Times New Roman",
-                          },
-                          children:
-                            "The mean squared errors of various neural operators trained on the 2D LDC dataset at two different difficulty levels (Easy and Hard). All errors are reported on the testing dataset.",
-                        }),
-                        (0, be.jsx)("br", {}),
-                        (0, be.jsx)("br", {}),
-                        (0, be.jsx)("img", {
-                          src: Tt,
-                          alt: "GIF",
-                          style: { maxWidth: "60%", marginTop: "1rem" },
-                        }),
-                        (0, be.jsx)("p", {
-                          style: {
-                            textAlign: "center",
-                            fontStyle: "italic",
-                            fontFamily: "Times New Roman",
-                          },
-                          children: (0, be.jsx)(St, {
-                            children:
-                              "The relative $L_2$ error of various neural operators trained on the 2D LDC dataset at two different difficulty levels (Easy and Hard). All metrics are reported on the testing dataset.",
-                          }),
-                        }),
+                  
                         (0, be.jsx)("br", {}),
                         (0, be.jsx)("br", {}),
                         (0, be.jsx)("img", {
@@ -29342,99 +29257,7 @@
                           alt: "GIF",
                           style: { maxWidth: "60%", marginTop: "1rem" },
                         }),
-                        (0, be.jsx)("p", {
-                          style: {
-                            textAlign: "center",
-                            fontStyle: "italic",
-                            fontFamily: "Times New Roman",
-                          },
-                          children: (0, be.jsx)(St, {
-                            children:
-                              "The relative $L_\\infty$ error of various neural operators trained on the 2D LDC dataset at two different difficulty levels (Easy and Hard). All metrics are reported on the testing dataset.",
-                          }),
-                        }),
-                        (0, be.jsx)("br", {}),
-                        (0, be.jsx)("br", {}),
-                        (0, be.jsx)("img", {
-                          src: Mt,
-                          alt: "GIF",
-                          style: { maxWidth: "60%", marginTop: "1rem" },
-                        }),
-                        (0, be.jsx)("p", {
-                          style: {
-                            textAlign: "center",
-                            fontStyle: "italic",
-                            fontFamily: "Times New Roman",
-                          },
-                          children:
-                            " DeepONet: Total training and validation loss.",
-                        }),
-                        (0, be.jsx)("br", {}),
-                        (0, be.jsx)("br", {}),
-                        (0, be.jsx)("div", {
-                          style: {
-                            backgroundColor: "#e0e0e0",
-                            color: "#000",
-                            padding: "1rem",
-                            borderRadius: "0.5rem",
-                          },
-                          children: (0, be.jsx)("span", {
-                            className: "greeting",
-                            style: {
-                              fontSize: "2rem",
-                              fontFamily: "Times New Roman",
-                            },
-                            children: "Field Predictions",
-                          }),
-                        }),
-                        (0, be.jsx)(Nt, {}),
-                        (0, be.jsx)("div", {
-                          style: {
-                            backgroundColor: "#e0e0e0",
-                            color: "#000",
-                            padding: "1rem",
-                            borderRadius: "0.5rem",
-                          },
-                          children: (0, be.jsx)("span", {
-                            className: "greeting",
-                            style: {
-                              fontSize: "2rem",
-                              fontFamily: "Times New Roman",
-                              fontStyle: "italic",
-                            },
-                            children: "References",
-                          }),
-                        }),
-                        (0, be.jsxs)("div", {
-                          style: { textAlign: "left", marginTop: "1rem" },
-                          children: [
-                            (0, be.jsx)("p", {
-                              children:
-                                "[1] Li, Z., Kovachki, N., Azizzadenesheli, K., Liu, B., Bhattacharya, K., Stuart, A., & Anandkumar, A. (2021). Fourier Neural Operator for Parametric Partial Differential Equations. arXiv preprint arXiv:2010.08895.",
-                            }),
-                            (0, be.jsx)("p", {
-                              children:
-                                "[2] Raoni\u0107, B., Molinaro, R., De Ryck, T., Rohner, T., Bartolucci, F., Alaifari, R., Mishra, S., & de B\xe9zenac, E. (2023). Convolutional Neural Operators for robust and accurate learning of PDEs. arXiv preprint arXiv:2302.01178.",
-                            }),
-                            (0, be.jsx)("p", {
-                              children:
-                                "[3] Lu, L., Jin, P., Pang, G., Zhang, Z., & Karniadakis, G. E. (2021). Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators. Nature Machine Intelligence, 3, 218\u2013229.",
-                            }),
-                            (0, be.jsx)("p", {
-                              children:
-                                '[4] He, Junyan, et al. "Geom-DeepONet: A point-cloud-based deep operator network for field predictions on 3D parameterized geometries." Computer Methods in Applied Mechanics and Engineering 429 (2024): 117130.',
-                            }),
-                            (0, be.jsx)("p", {
-                              children:
-                                '[5] Tripura, Tapas, and Souvik Chakraborty. "Wavelet neural operator for solving parametric partial differential equations in computational mechanics problems." Computer Methods in Applied Mechanics and Engineering 404 (2023): 115783.',
-                            }),
-                            (0, be.jsx)("p", {
-                              children:
-                                '[6] Herde, Maximilian, et al. "Poseidon: Efficient Foundation Models for PDEs." arXiv preprint arXiv:2405.19101 (2024).',
-                            }),
-                          ],
-                        }),
-                      ],
+                                              ],
                     }),
                     (0, be.jsx)("div", {
                       children: (0, be.jsx)("span", {
@@ -29822,7 +29645,7 @@
                           children: "Datasets",
                         }),
                       }),
-                      (0, be.jsx)("li", {
+                     /* (0, be.jsx)("li", {
                         className: "nav-item nav-link-item",
                         children: (0, be.jsx)(Gt, {
                           className: "nav-link",
@@ -29842,6 +29665,7 @@
                           children: "CFD Simulations",
                         }),
                       }),
+                      */
                       (0, be.jsx)("li", {
                         className: "nav-item nav-link-item",
                         children: (0, be.jsx)(Gt, {
@@ -29849,7 +29673,7 @@
                           activeClassName: "active-nav",
                           to: "/experimentalresults",
                           style: { color: "white", marginRight: "15px" },
-                          children: "Experimental Results",
+                          children: "Procedural Models",
                         }),
                       }),
                       (0, be.jsx)("li", {
