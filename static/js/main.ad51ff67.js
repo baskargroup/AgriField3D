@@ -14460,7 +14460,7 @@
                             "In the 2D LDC setup, a square features three stationary walls and one moving lid, with a domain size of [0, 2] \xd7 [0, 2]. An object is placed in the middle of the flow within the chamber. The boundary conditions are shown below.",
                         }),
                         (0, be.jsx)("img", {
-                          src: Se,
+                          src: Te,
                           alt: "GIF",
                           style: { maxWidth: "20%", marginTop: "1rem" },
                         }),
