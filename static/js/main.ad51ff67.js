@@ -14445,7 +14445,7 @@
                               fontFamily: "Times New Roman",
                             },
                             children:
-                              "Sample Dataset)",
+                              "Scenario 1: 2D lid-driven cavity (pure Navier-Stokes)",
                           }),
                         }),
                         (0, be.jsx)("br", {}),
