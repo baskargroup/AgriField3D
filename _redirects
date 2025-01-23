@@ -1,1 +1,9 @@
-/*    /index.html  200
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="0; URL=./index.html" />
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
