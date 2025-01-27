@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          ref: develop # Make sure this matches the branch to deploy from
+          ref: option2 # Make sure this matches the branch to deploy from
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
