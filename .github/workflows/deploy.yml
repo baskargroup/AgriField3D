@@ -3,28 +3,51 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - option2 # Replace with the branch you want to deploy from
+      - main # This will trigger on push to main (JavaScript branch)
+      - option2 # This will trigger on push to option2 (Jekyll branch)
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      # Check out the repository
+      - name: Check out the repository
         uses: actions/checkout@v2
-        with:
-          ref: option2 # Make sure this matches the branch to deploy from
 
-      - name: Set up Node.js
+      # Set up Jekyll (for the option2 branch)
+      - name: Set up Ruby for Jekyll (for option2)
+        if: github.ref == 'refs/heads/option2' # Only runs if the 'option2' branch is pushed
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "2.7"
+
+      # Set up Node.js for JavaScript (for the main branch)
+      - name: Set up Node.js for JavaScript (for main)
+        if: github.ref == 'refs/heads/main' # Only runs if the 'main' branch is pushed
         uses: actions/setup-node@v2
         with:
           node-version: "14"
 
-      - name: Build the project
-        run: npm run build # Replace with the build command for your project
+      # Build Jekyll site (for the option2 branch)
+      - name: Build Jekyll site (for option2)
+        if: github.ref == 'refs/heads/option2' # Only runs if the 'option2' branch is pushed
+        run: |
+          bundle install
+          bundle exec jekyll build
+          cp -r _site/* ./docs  # Copy the built files to the 'docs' directory
 
+      # Build JavaScript site (for the main branch)
+      - name: Build JavaScript site (for main)
+        if: github.ref == 'refs/heads/main' # Only runs if the 'main' branch is pushed
+        run: |
+          npm install
+          npm run build  # Assuming you have a build script defined in your package.json
+          cp -r dist/* ./docs  # Copy the built files to the 'docs' directory
+
+      # Deploy to GitHub Pages using the GITHUB_TOKEN (no deploy key required)
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages # This is the branch where the site will be deployed
-          folder: build # The folder containing the build output (adjust this if necessary)
+          publish_dir: ./docs # Ensure to deploy the 'docs' directory
+          github_token: ${{ secrets.GITHUB_TOKEN }}
