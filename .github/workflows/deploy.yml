@@ -3,8 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # This will trigger on push to main (JavaScript branch)
-      - option2 # This will trigger on push to option2 (Jekyll branch)
+      - main # Triggered when you push to the main branch (JavaScript site)
+      - option2 # Triggered when you push to the option2 branch (JavaScript site)
 
 jobs:
   deploy:
@@ -15,39 +15,23 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v2
 
-      # Set up Jekyll (for the option2 branch)
-      - name: Set up Ruby for Jekyll (for option2)
-        if: github.ref == 'refs/heads/option2' # Only runs if the 'option2' branch is pushed
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "2.7"
-
-      # Set up Node.js for JavaScript (for the main branch)
-      - name: Set up Node.js for JavaScript (for main)
-        if: github.ref == 'refs/heads/main' # Only runs if the 'main' branch is pushed
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-
-      # Build Jekyll site (for the option2 branch)
-      - name: Build Jekyll site (for option2)
-        if: github.ref == 'refs/heads/option2' # Only runs if the 'option2' branch is pushed
-        run: |
-          bundle install
-          bundle exec jekyll build
-          cp -r _site/* ./docs  # Copy the built files to the 'docs' directory
-
-      # Build JavaScript site (for the main branch)
-      - name: Build JavaScript site (for main)
+      # Copy the contents of the 'main' branch to the 'docs' directory
+      - name: Copy content from main (JavaScript site)
         if: github.ref == 'refs/heads/main' # Only runs if the 'main' branch is pushed
         run: |
-          npm install
-          npm run build  # Assuming you have a build script defined in your package.json
-          cp -r dist/* ./docs  # Copy the built files to the 'docs' directory
+          mkdir -p docs
+          cp -r index.html static/* docs/
+
+      # Copy the contents of the 'option2' branch to the 'docs' directory
+      - name: Copy content from option2 (JavaScript site)
+        if: github.ref == 'refs/heads/option2' # Only runs if the 'option2' branch is pushed
+        run: |
+          mkdir -p docs
+          cp -r index.html static/* docs/
 
       # Deploy to GitHub Pages using the GITHUB_TOKEN (no deploy key required)
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          publish_dir: ./docs # Ensure to deploy the 'docs' directory
+          publish_dir: ./docs # Deploy the 'docs' directory
           github_token: ${{ secrets.GITHUB_TOKEN }}
