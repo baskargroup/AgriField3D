@@ -1,4 +1,4 @@
-site_name: Zaki Jubery
+site_name: AgriField3D
 theme:
   name: material
   features:
@@ -28,7 +28,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/znjubery
+      link: https://github.com/
 extra_css:
   - stylesheets/extra.css
 
@@ -54,5 +54,5 @@ plugins:
   - glightbox
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/znjubery"  target="_blank" rel="noopener">Zaki Jubery</a>
+  &copy; 2025 <a href="https://www.me.iastate.edu/bglab/"  target="_blank" rel="noopener">Baskar Ganapathysubramanian</a>
     
