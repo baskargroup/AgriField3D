@@ -1,0 +1,37 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Triggered when you push to the main branch (JavaScript site)
+      - option2 # Triggered when you push to the option2 branch (JavaScript site)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      # Copy the contents of the 'main' branch to the 'docs' directory
+      - name: Copy content from main (JavaScript site)
+        if: github.ref == 'refs/heads/main' # Only runs if the 'main' branch is pushed
+        run: |
+          mkdir -p docs
+          cp -r index.html static/* docs/
+
+      # Copy the contents of the 'option2' branch to the 'docs' directory
+      - name: Copy content from option2 (JavaScript site)
+        if: github.ref == 'refs/heads/option2' # Only runs if the 'option2' branch is pushed
+        run: |
+          mkdir -p docs
+          cp -r index.html static/* docs/
+
+      # Deploy to GitHub Pages using the GITHUB_TOKEN (no deploy key required)
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./docs # Deploy the 'docs' directory
+          github_token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,25 +1,680 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="./logo512.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0000FF" />
-    <meta name="description" content="Web site created using create-react-app" />
-    <link rel="apple-touch-icon" href="./logo192.png" />
-    <link rel="manifest" href="./manifest.json" />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-        crossorigin="anonymous"
-    />
-    <title>AgriField3D</title>
-    <script defer="defer" src="./static/js/main.ad51ff67.js"></script>
-    <link href="./static/css/main.c5912ae8.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Project name: AgriField3D">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/videos/carousel1.mp4" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>AgriField3D</title>
+  <link rel="icon" type="image/x-icon" href="static/images/carousel4.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
-<body style="background-color:#fefefe">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-</body>
-</html>
+<body>
+
+
+  <!-- <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Arboretum: A Large Multimodal Dataset for Advancing AI for Biodiversity</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <!-- <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Chih-Hsuan Yang,</a></span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Benjamin Feuer,</a></span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Nirmal Baishnab,</a></span>
+                    <span class="author-block">
+                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Kelly O. Marshall,</a></span>
+                      <span class="author-block">
+                        <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Talukder Zaki Jubery,</a></span>
+                    </div>
+                    <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Andre Nakkab,</a></span>
+                      <span class="author-block">
+                        <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Md Zahid Hasan,</a></span>
+                        <span class="author-block">
+                          <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Shivani Chiranjeevi,</a></span>
+                          <span class="author-block">
+                            <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zi K. Deng,</a></span>
+                            <span class="author-block">
+                              <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Asheesh K Singh,</a></span>
+                      </div>
+                      <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Arti Singh,</a></span>
+                        <span class="author-block">
+                          <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Soumik Sarkar,</a></span>
+                          <span class="author-block">
+                            <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Nirav Merchant,</a></span>
+                            <span class="author-block">
+                              <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Chinmay Hegde,</a></span>
+                              <span class="author-block">
+                                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Baskar Ganapathysubramanian</a></span> 
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>NeurIPS 2024</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/BaskarGroup/Arbor-Clip-data-team.git" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>  -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"> AgriField3D: A Curated 3D Point Cloud Dataset of Field-Grown Plants from a Maize Diversity Panel</h1>
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/elvis-kimara/" target="_blank">Elvis Kimara*,</a>
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/mozhgan-hadadi/" target="_blank">Mozhgan Hadadi*,</a>
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in//" target="_blank">Jackson Godbersen,</a>
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=GNuXi6oAAAAJ&hl=en" target="_blank">Aditya Balu,</a>
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=P3h1SM0AAAAJ&hl=en" target="_blank">Zaki Jubery,</a>
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=iVTMSxoAAAAJ&hl=en&oi=ao" target="_blank">Adarsh Krishnamurthy,</a>
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=UW4mNTW0nOkC&hl=en" target="_blank">Patrick Schnable,</a>
+            </span>
+            <span class="author-block">
+              <a href="https://www.me.iastate.edu/bglab/" target="_blank">Baskar Ganapathysubramanian,</a>
+            </span>
+            
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Iowa State University<br>
+            </span>
+            <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
+          </div>
+          <div class="publication-links">
+            <!-- Arxiv PDF link -->
+            <span class="link-block">
+              <a href="https://arxiv.org/pdf/" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <!-- Supplementary PDF link -->
+            <!-- <span class="link-block">
+              <a href="static/pdfs/supplementary_material.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Supplementary</span>
+              </a>
+            </span> -->
+            <!-- Github link -->
+            <span class="link-block">
+              <a href="https://github.com/baskargroup/AgriField3D" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </span>
+            <!-- Hugging Face link -->
+            <span class="link-block">
+              <a href="https://huggingface.co/datasets/BGLab/AgriField3D" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  &#129303;
+                </span>
+                <span>Dataset card</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://huggingface.co/BGLab/AgriField3D" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  &#129303;
+                </span>
+                <span>Model card</span>
+              </a>
+            </span>
+            <!-- ArXiv abstract Link -->
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  code {
+    color:black;
+  }
+</style>
+<!-- banner image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/Poster2.png" alt="AgriField3D">
+      <h2 class="subtitle has-text-centered">
+        <b>Raw Data and Curated Sample in the AgriField3D Dataset.</b> 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End banner image -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+
+            The application of artificial intelligence (AI) in three-dimensional (3D) 
+            agricultural research, particularly for maize, has been limited by the
+             scarcity of large-scale, diverse datasets. While 2D image datasets are 
+             abundant, they cannot capture essential structural details such as leaf 
+             architecture, plant volume, and spatial arrangements that 3D data can 
+             provide. To address this limitation, we present a curated dataset of 
+             3D point clouds of fully field-grown maize plants with diverse genetic 
+             backgrounds designed to be AI-ready for advancing agricultural research.
+              Our dataset comprises over 1,000 high-quality point clouds representing 
+              diverse maize varieties collected using a Terrestrial Laser Scanner. To 
+              enhance the usability of the dataset, we performed graph-based segmentation
+               to isolate individual leaves and stalk point clouds. Each leaf is assigned
+                a consistent color label across all plants based on its order from bottom
+                 to top (e.g., all first leaves are the same color, all second leaves are
+                  the same color, and so on). Similarly, all stalks are assigned a single,
+                   distinct color. A rigorous quality control process was undertaken to
+                    manually correct any errors in the segmentation and leaf ordering.
+                     This ensures accurate segmentation and consistent color labeling and
+                      facilitates precise leaf counting and structural analysis. 
+                      Additionally, the dataset includes metadata describing point cloud
+                       quality, the number of leaves, and the presence of tassels and maize
+                        cobs. To support diverse AI applications, we provide code that
+                         can sub-sample each point cloud to create a user-defined 
+                         resolution (100k, 50k, 10k points, etc.) through uniform 
+                         downsampling. All versions were manually quality-checked 
+                         to ensure the preservation of topology and plant structure. 
+                         This dataset lays the foundation for leveraging 3D data to 
+                         enable advanced applications in agricultural research, 
+                         particularly for maize phenotyping and plant structure studies.
+                          
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Image carousel -->
+<!--
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+<!-- data feature -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Dataset Features</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <!-- First Image -->
+          <div class="publication-image" id="image-container-1">
+            <img src="static/images/Nine_Samples.png" alt="Sample" style="cursor: pointer; width: 80%; height: auto;">
+          </div>
+          <p class="description">
+            Nine Sample images showing the architectural diversity of the maize plants in the dataset.
+          </p>
+          
+          <!-- Second Image -->
+          <div class="publication-image" id="image-container-2">
+            <img src="static/images/Procedural_Models_Samples.png" alt="Sample Image 2" style="cursor: pointer; width: 80%; height: auto;">
+          </div>
+          <p class="description">
+            <b\>Procedural_Models_Samples</b>, Top row: Workflow of the procedural model generation. Bottom row: Generated sample of the procedural models.
+          </p>
+          
+          <!-- Third Image -->
+          <div class="publication-image" id="image-container-3">
+            <img src="static/images/comparison_argifield3d.png" alt="Sample Image 3" style="cursor: pointer; width: 80%; height: auto;">
+          </div>
+          <p class="description">
+            Comparison of AgriField3D dataset with existing datasets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Main Datasets Section -->
+<!--
+<section class="hero is-medium" style="margin-bottom: 1rem;">
+  <div class="hero-body" style="padding-bottom: 1rem;">
+    <div class="container">
+      <h1 class="title is-3">Dataset Benchmarks</h1>
+      <div class="content">
+        <p>
+        <b>BioTrove </b> consists of several benchmark datasets - <b>BioTrove-Train(40M)</b> and <b>New Benchmarks</b>. The main BioTrove is ~162M in sample size.
+        </p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- BioTroveTrain Subsection -->
+<!--
+<section class="hero is-small" style="margin-bottom: 1rem;">
+  <div class="hero-body" style="padding-bottom: 1rem;">
+    <div class="container">
+      <h2 class="title is-4">BioTrove-Train</h3>
+      <div class="content">
+        <p>
+        <b>BioTrove-Train</b> is a curated subset comprising approximately 40M samples and 33K species from the seven - <i>Aves</i>, <i>Arachnida</i>, <i>Insecta</i>, <i>Plantae</i>, <i>Fungi</i>, <i>Mollusca</i>, and <i>Reptilia</i> categories (iNaturalist prior to January 27, 2024).
+        It contains 30 to maximum of 50,000 samples per species. We conducted semi-global shuffling and divided the data into mini-batches of approximately 50,000 samples each. From these
+        mini-batches, 95% were randomly selected for training and validation, while the remaining 5% were reserved for testing.
+        </p>
+      </div>
+      <div class="image-container" style="text-align: center;">
+        <img src="static/images/arboretum40m.png" alt="lifestages" style="width: 80%; height: auto;">
+        <p class="caption has-text-centered">
+          Training data sources used in BioTrove-Train and Diversity in Different Taxonomy Levels. We integrate taxonomic labels into the images.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<!-- New Benchmark Subsection -->
+<!--
+<section class="hero is-small" style="margin-bottom: 1rem;">
+  <div class="hero-body" style="padding-bottom: 1rem;">
+    <div class="container">
+      <h2 class="title is-4">New Benchmark</h3>
+      <div class="content">
+        <p>
+          From <b>BioTrove</b>, we created three new benchmark datasets for fine-grained image classification. They are- <b>BioTrove-Balanced</b>, <b>BioTrove-Unseen</b> and <b>BioTrove-LifeStages</b>.
+        </p>
+      </div>
+      <div class="image-container" style="text-align: center;">
+        <img src="static/images/lifestages.png" alt="lifestages" style="width: 80%; height: auto;">
+        <p class="caption has-text-centered">
+          (a) Example images from BioTrove-Unseen. (b) BioTrove-LIFE-STAGES with 20 class labels: four life stages 
+            (egg, larva, pupa, and adult) for five distinct insect species
+        </p>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<!-- dataprep -->
+<!--
+<section class="hero is-small" style="margin-bottom: 1rem;">
+  <div class="hero-body" style="padding-bottom: 1rem;">
+    <div class="container">
+      <h2 class="title is-3">Data Preparation</h2>
+      <div class="content">
+        <p>
+          Our <a href="https://github.com/baskargroup/BioTrove/blob/main/Arbor-preprocess/README_arbor_process.md" target="_blank" class="underline-link">Github</a> includes the pipeline and <a href="https://pypi.org/project/arbor-process/" target="_blank" class="underline-link">biotrove-process</a> package installation instructions for the data preparation. 
+          The metadata can be downloaded from the HuggingFace dataset cards: <a href="https://huggingface.co/datasets/BGLab/BioTrove-Train" target="_blank" class="underline-link">BioTrove-Train</a> and <a href="https://huggingface.co/datasets/BGLab/BioTrove" target="_blank" class="underline-link">BioTrove (main)</a>. This procedure will generate machine learning-ready image-text pairs from the downloaded metadata in four steps:
+        </p>
+      </div>
+      <div class="image-container" style="text-align: center;">
+        <img src="static/images/dataprep.png" alt="datprep" style="width: 80%; height: auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .underline-link {
+    text-decoration: underline;
+  }
+</style>-->
+<!-- end of dataprep -->
+
+<!-- ArborCLIP model -->
+<!--
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">BioTrove-CLIP Model</h2>
+      <!-- Explanation text space -->
+      <!-- 
+      <div class="content">
+        <p>
+          We use <b>BioTrove-Train</b> to train new CLIP-style foundation models, and then evaluate them on zero-shot image classification tasks. 
+          A <code>ViT-B/16</code> backbone initialized from the OpenAI <a href="https://arxiv.org/abs/2103.00020" target="_blank" class="underline-link">CLIP</a> weights, 
+          a <code>ViT-L/14</code> from the <a href="https://github.com/facebookresearch/MetaCLIP" target="_blank" class="underline-link">MetaCLIP</a> and 
+          a <code>ViT-B/16</code> from the <a href="https://arxiv.org/abs/2311.18803" target="_blank" class="underline-link">BioCLIP</a> checkpoint were trained to develop these models.
+          The BioTrove-CLIP models are designed to analyze and categorize various plant species using advanced machine learning techniques. 
+          It leverages a vast dataset and sophisticated algorithms to achieve high accuracy in species recognition.
+        </p>
+      </div>-->
+      <!-- Static Image with Caption -->
+       <!--
+      <div class="image-container" style="text-align: center;">
+        <img src="static/images/bioTroveCLIPresults.png" alt="ArborCLIP Model" style="width: 80%; height: auto; max-height: 400px;">
+        <p class="caption has-text-centered"><b>BioTrove-CLIP</b> performances well on various benchmarks. The top three rows
+          are pre-trained checkpoints: OpenAI-B refers to OpenAI's <code>ViT-B-16</code> model, BioCLIP-B
+          refers to the BioCLIP <code>ViT-B-16</code> model, and MetaCLIP-L refers to the MetaCLIP-cc <code>ViTL-14</code> model. 
+          The bottom three rows are Biotrove-Clip models fine-tuned on different
+          checkpoints: <code>BT-CLIP-O</code> (from OpenAI-B), <code>BT-CLIP-B</code> (from BioCLIP-B), and <code>BT-CLIP-M</code>
+          (from MetaCLIP-L). Benchmark abbreviations: <code>BTU</code> (Biotrove-Unseen, <code>n=300</code>), <code>BTB</code>
+          (Biotrove-Balanced, <code>n=2253</code>), <code>BCR</code> (BioCLIP-Rare, <code>n=400</code>), <code>F</code> (Fungi, <code>n=25</code>), <code>I2</code> (Insects-2,
+          <code>n=102</code>), <code>B</code> (Birds-525, <code>n=525</code>), <code>LS</code> (Life-Stages, <code>n=20</code>), and <code>DW</code> (DeepWeeds, <code>n=9</code>).<code>95%</code>
+          confidence intervals <code>(±CI)</code> are included.</p>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<!-- Model weights -->
+ <!--
+<section class="hero is-medium" style="margin-bottom: 1rem;">
+  <div class="hero-body" style="padding-bottom: 1rem;">
+    <div class="container">
+      <h1 class="title is-4">Model Weights</h1>
+      <div class="content">
+        <p>
+        The <b>BioTrove-CLIP</b> models were developed for the benefit of the AI community as an open-source product. 
+        We released three <b>BioTrove-CLIP</b> trained models based on OpenAI's <a href="https://openai.com/index/clip/" target="_blank" class="underline-link">CLIP</a> model. 
+        The models were trained on <b>BioTrove-Train</b> dataset. Please utilize our HuggingFace <a href="https://huggingface.co/BGLab/BioTrove-CLIP" target="_blank" class="underline-link">Model card</a> to access the model checkpoints.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>-->
+<!-- End  Model weights -->
+
+<!-- Acknowledgements -->
+<section class="hero is-medium" style="margin-bottom: 1rem;">
+  <div class="hero-body" style="padding-bottom: 1rem;">
+    <div class="container">
+      <h1 class="title is-4">Acknowledgements</h1>
+      <div class="content">
+        <p>
+          This work was supported by the AI Research Institutes program supported by the <b>NSF</b> and <b>USDA-NIFA</b> under 
+          <a href="https://aiira.iastate.edu/" target="_blank" class="underline-link">AI Institute: for Resilient Agriculture (AIIRA)</a>, 
+          <code>Award No.2021-67021-35329</code>.
+        </p>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End -->
+
+<!--Team -->
+<section class="section">
+  <div class="container is-max-widescreen">
+      <div class="rows">
+          <div class="rows is-centered ">
+              <div class="row is-full-width has-text-centered">
+                  <h2 class="title is-3"><span class="dvima">Team</span></h2>
+                  <div class="columns" style="max-width: 95%; padding-left: 10%;">
+                      <div class="column has-text-centered video-column">
+                          <a href="https://www.linkedin.com/in/elvis-kimara/" target="_blank" style="border-bottom: none;">
+                              <span class="image"><img src="static/images/team/elvis.jpg" alt="" style="width: 90%;" /></span>
+                              <span style="font-weight: bold;">Elvis Kimara</span>
+                          </a>
+                      </div>
+
+                      <div class="column has-text-centered video-column">
+                          <a href="https://www.linkedin.com/in/mozhgan-hadadi/" target="_blank" style="border-bottom: none;">
+                              <span class="image"><img src="static/images/team/mozhgan.jpeg" alt="" style="width: 90%;" /></span>
+                              <span style="font-weight: bold;">Mozhgan Hadadi</span>
+                          </a>
+                      </div>
+
+                      <div class="column has-text-centered video-column">
+                        <a href="https://www.linkedin.com/in/" target="_blank" style="border-bottom: none;">
+                            <span class="image"><img src="static/images/team/dummy.png" alt="" style="width: 90%;" /></span>
+                            <span style="font-weight: bold;">Jackson Godbersen</span>
+                        </a>
+                      </div>
+
+                      <div class="column has-text-centered video-column">
+                        <a href="https://scholar.google.com/citations?user=GNuXi6oAAAAJ&hl=en&oi=ao" target="_blank" style="border-bottom: none;">
+                            <span class="image"><img src="static/images/team/balu.d4938a4efb8fe4623b1a.jpeg" alt="" style="width: 90%;" /></span>
+                            <span style="font-weight: bold;">Aditya Balu</span>
+                        </a>
+                      </div>
+
+                      
+                  </div>
+                  <br />
+                  <div class="columns" style="max-width: 95%; padding-left: 10%;">
+                    <div class="column has-text-centered video-column">
+                      <a href="https://scholar.google.com/citations?user=P3h1SM0AAAAJ&hl=en" target="_blank" style="border-bottom: none;">
+                          <span class="image"><img src="static/images/team/Zaki.png" alt="" style="width: 92%;" /></span>
+                          <span style="font-weight: bold;">Zaki Jubery</span>
+                      </a>
+                    </div>
+                      <div class="column has-text-centered video-column">
+                        <a href="https://scholar.google.com/citations?user=iVTMSxoAAAAJ&hl=en&oi=ao" target="_blank" style="border-bottom: none;">
+                            <span class="image"><img src="static/images/team/adarsh.202221a57a53702b8066.jpeg" alt="" style="width: 90%;" /></span>
+                            <span style="font-weight: bold;">Adarsh Krishnamurthy</span>
+                        </a>
+                      </div>  
+
+                      <div class="column has-text-centered video-column">
+                          <a href="https://scholar.google.com/citations?user=UW4mNTW0nOkC&hl=en" target="_blank" style="border-bottom: none;">
+                              <span class="image"><img src="static/images/team/schnable.jpg" alt="" style="width: 90%;" /></span>
+                              <span style="font-weight: bold;">Patrick Schnable</span>
+                          </a>
+                      </div>
+
+                      <div class="column has-text-centered video-column">
+                        <a href="https://www.me.iastate.edu/bglab/" target="_blank" style="border-bottom: none;">
+                            <span class="image"><img src="static/images/team/baskar.052e915b05c921cb3ffa.png" alt="" style="width: 90%;" /></span>
+                            <span style="font-weight: bold;">Baskar Ganapathysubramanian</span>
+                        </a>
+                      </div>
+                      
+                  </div>
+
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+<!--End Team -->
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @inproceedings{kimara2025agriField3D,
+          title={AgriField3D: A Curated 3D Point Cloud Dataset of Field-Grown Plants from a Maize Diversity Panel2}, 
+          author={Elvis Kimara1†, Mozhgan Hadadi3, Jackson Godbersen, Aditya Balu, Zaki Jubery, Adarsh Krishnamurthy, Patrick Schnable, Baskar Ganapathysubramanian},
+          booktitle={Arxiv},
+          year={2025},
+          primaryClass={cs.CV},
+          url={}</code></pre>
+  </div>
+</section>
+<!--End -->
+
+
+<script>
+  document.getElementById('copy-button').addEventListener('click', function() {
+    const bibtexText = document.getElementById('bibtex-citation').textContent;
+    navigator.clipboard.writeText(bibtexText).then(function() {
+      alert('BibTeX citation copied to clipboard!');
+    }, function(err) {
+      console.error('Could not copy text: ', err);
+    });
+  });
+</script>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
