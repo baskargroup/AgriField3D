@@ -1,25 +1,13 @@
 
 # AgriField3D: A Curated 3D Point Cloud Dataset of Field-Grown Plants from a Maize Diversity Panel
 
-### Authors:
-- [Elvis Kimara*](https://www.linkedin.com/in/elvis-kimara/)
-- [Mozhgan Hadadi*](https://www.linkedin.com/in/mozhgan-hadadi/)
-- [Jackson Godbersen](https://www.linkedin.com/in/)
-- [Aditya Balu](https://scholar.google.com/citations?user=GNuXi6oAAAAJ&hl=en)
-- [Zaki Jubery](https://scholar.google.com/citations?user=P3h1SM0AAAAJ&hl=en)
-- [Adarsh Krishnamurthy](https://scholar.google.com/citations?user=iVTMSxoAAAAJ&hl=en&oi=ao)
-- [Patrick Schnable](https://scholar.google.com/citations?user=UW4mNTW0nOkC&hl=en)
-- [Baskar Ganapathysubramanian](https://www.me.iastate.edu/bglab/)
+[Elvis Kimara*](https://www.linkedin.com/in/elvis-kimara/), [Mozhgan Hadadi*](https://www.linkedin.com/in/mozhgan-hadadi/), [Jackson Godbersen](https://www.linkedin.com/in/), [Aditya Balu](https://scholar.google.com/citations?user=GNuXi6oAAAAJ&hl=en), [Zaki Jubery](https://scholar.google.com/citations?user=P3h1SM0AAAAJ&hl=en), [Adarsh Krishnamurthy](https://scholar.google.com/citations?user=iVTMSxoAAAAJ&hl=en&oi=ao), [Patrick Schnable](https://scholar.google.com/citations?user=UW4mNTW0nOkC&hl=en), [Baskar Ganapathysubramanian](https://www.me.iastate.edu/bglab/)
 
 **Institution**: Iowa State University  
 **Equal Contribution**: Elvis Kimara*, Mozhgan Hadadi*
 
-## Links:
-- [Paper (arXiv)](https://arxiv.org/pdf/)
-- [GitHub](https://github.com/baskargroup/AgriField3D)
-- [Dataset Card](https://huggingface.co/datasets/BGLab/AgriField3D)
-- [Model Card](https://huggingface.co/BGLab/AgriField3D)
-- [arXiv Abstract](https://arxiv.org/abs/)
+
+[Paper (arXiv)](https://arxiv.org/pdf/),[GitHub](https://github.com/baskargroup/AgriField3D),[Dataset Card](https://huggingface.co/datasets/BGLab/AgriField3D), [Model Card](https://huggingface.co/BGLab/AgriField3D),[arXiv Abstract](https://arxiv.org/abs/)
 
  
 
@@ -62,37 +50,50 @@ This work was supported by the AI Research Institutes program supported by the *
 
 ## Team
 
-### [Elvis Kimara](https://www.linkedin.com/in/elvis-kimara/)
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div style="width: 30%; text-align: center;">
+        <h3 style="font-weight: normal; font-size: 14px; margin: 0;"><a href="https://www.linkedin.com/in/elvis-kimara/">Elvis Kimara</a></h3>
+        <img src="images/elvis.jpg" width="150" height="150">
+    </div>
+    <div style="width: 30%; text-align: center;">
+        <h3 style="font-weight: normal; font-size: 14px; margin: 0;"><a href="https://www.linkedin.com/in/mozhgan-hadadi/">Mozhgan Hadadi</a></h3>
+        <img src="images/mozhgan.jpeg" width="150" height="150">
+    </div>
+    <div style="width: 30%; text-align: center;">
+        <h3 style="font-weight: normal; font-size: 14px; margin: 0;"><a href="https://www.linkedin.com/in/">Jackson Godbersen</a></h3>
+        <img src="images/dummy.png" width="150" height="150">
+    </div>
+</div>
 
-![Elvis](images/elvis.jpg)
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div style="width: 30%; text-align: center;">
+        <h3 style="font-weight: normal; font-size: 14px; margin: 0;"><a href="https://scholar.google.com/citations?user=GNuXi6oAAAAJ&hl=en">Aditya Balu</a></h3>
+        <img src="images/balu.d4938a4efb8fe4623b1a.jpeg" width="150" height="150">
+    </div>
+    <div style="width: 30%; text-align: center;">
+        <h3 style="font-weight: normal; font-size: 14px; margin: 0;"><a href="https://scholar.google.com/citations?user=P3h1SM0AAAAJ&hl=en">Zaki Jubery</a></h3>
+        <img src="images/Zaki.png" width="150" height="150">
+    </div>
+    <div style="width: 30%; text-align: center;">
+        <h3 style="font-weight: normal; font-size: 14px; margin: 0;"><a href="https://scholar.google.com/citations?user=iVTMSxoAAAAJ&hl=en&oi=ao">Adarsh Krishnamurthy</a></h3>
+        <img src="images/adarsh.202221a57a53702b8066.jpeg" width="150" height="150">
+    </div>
+</div>
 
-### [Mozhgan Hadadi](https://www.linkedin.com/in/mozhgan-hadadi/)
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div style="width: 50%; text-align: center;">
+        <h3 style="font-weight: normal; font-size: 14px; margin: 0;"><a href="https://scholar.google.com/citations?user=UW4mNTW0nOkC&hl=en">Patrick Schnable</a></h3>
+        <img src="images/schnable.jpg" width="150" height="150">
+    </div>
+    <div style="width: 50%; text-align: center;">
+        <h3 style="font-weight: normal; font-size: 14px; margin: 0;"><a href="https://www.me.iastate.edu/bglab/">Baskar Ganapathysubramanian</a></h3>
+        <img src="images/baskar.052e915b05c921cb3ffa.png" width="150" height="150">
+    </div>
+</div>
 
-![Mozhgan](images/mozhgan.jpeg)
 
-### [Jackson Godbersen](https://www.linkedin.com/in/)
 
-![Jackson](images/dummy.png)
 
-### [Aditya Balu](https://scholar.google.com/citations?user=GNuXi6oAAAAJ&hl=en)
-
-![Aditya](images/balu.d4938a4efb8fe4623b1a.jpeg)
-
-### [Zaki Jubery](https://scholar.google.com/citations?user=P3h1SM0AAAAJ&hl=en)
-
-![Zaki](images/Zaki.png)
-
-### [Adarsh Krishnamurthy](https://scholar.google.com/citations?user=iVTMSxoAAAAJ&hl=en&oi=ao)
-
-![Adarsh](images/adarsh.202221a57a53702b8066.jpeg)
-
-### [Patrick Schnable](https://scholar.google.com/citations?user=UW4mNTW0nOkC&hl=en)
-
-![Patrick](images/schnable.jpg)
-
-### [Baskar Ganapathysubramanian](https://www.me.iastate.edu/bglab/)
-
-![Baskar](images/baskar.052e915b05c921cb3ffa.png)
 
 ---
 
