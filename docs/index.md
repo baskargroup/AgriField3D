@@ -30,9 +30,20 @@ The application of artificial intelligence (AI) in three-dimensional (3D) agricu
 ### Procedural Model Samples
 
 - Top row: Workflow of the procedural model generation.
+<p align="center">
+  <img src="images/Mo17_GT_raw.gif" alt="21-JN3761-1 NURBS Surface" width="200" style="margin-right:10px;">
+  <img src="images/Mo17_GT_color.gif" alt="CI90C NURBS Surface" width="200" style="margin-right:10px;">
+  <img src="images/Mo17_NURBS_Surface.gif" alt="CML238 NURBS Surface" width="200" 
+</p>
+
 - Bottom row: Generated sample of the procedural models.
 
-![Procedural Models](images/Procedural_Models_Samples.png)
+<p align="center">
+  <img src="images/21-JN3761-1_NURBS_Surface.gif" alt="21-JN3761-1 NURBS Surface" width="200" style="margin-right:10px;">
+  <img src="images/CI90C_NURBS_Surface.gif" alt="CI90C NURBS Surface" width="200" style="margin-right:10px;">
+  <img src="images/CML238_NURBS_Surface.gif" alt="CML238 NURBS Surface" width="200" style="margin-right:10px;">
+  <img src="images/T8_NURBS_Surface.gif" alt="T8 NURBS Surface" width="200">
+</p>
 
 ### Comparison with Existing Datasets
 
