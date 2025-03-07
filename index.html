@@ -168,6 +168,11 @@
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=P3h1SM0AAAAJ&hl=en" target="_blank">Zaki Jubery,</a>
             </span>
+
+            <span class="author-block">
+              <a href="yaweil@iastate.edu" target="_blank">Yawei Li,</a>
+            </span>
+
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=iVTMSxoAAAAJ&hl=en&oi=ao" target="_blank">Adarsh Krishnamurthy,</a>
             </span>
@@ -218,18 +223,10 @@
                 <span class="icon">
                   &#129303;
                 </span>
-                <span>Dataset card</span>
+                <span>Dataset</span>
               </a>
             </span>
-            <span class="link-block">
-              <a href="https://huggingface.co/BGLab/AgriField3D" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  &#129303;
-                </span>
-                <span>Model card</span>
-              </a>
-            </span>
-            <!-- ArXiv abstract Link -->
+           <!-- ArXiv abstract Link -->
             <span class="link-block">
               <a href="https://arxiv.org/abs/" target="_blank" class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
@@ -272,35 +269,26 @@
         <div class="content has-text-justified">
           <p>
 
-            The application of artificial intelligence (AI) in three-dimensional (3D) 
-            agricultural research, particularly for maize, has been limited by the
-             scarcity of large-scale, diverse datasets. While 2D image datasets are 
-             abundant, they cannot capture essential structural details such as leaf 
-             architecture, plant volume, and spatial arrangements that 3D data can 
-             provide. To address this limitation, we present a curated dataset of 
-             3D point clouds of fully field-grown maize plants with diverse genetic 
-             backgrounds designed to be AI-ready for advancing agricultural research.
-              Our dataset comprises over 1,000 high-quality point clouds representing 
-              diverse maize varieties collected using a Terrestrial Laser Scanner. To 
-              enhance the usability of the dataset, we performed graph-based segmentation
-               to isolate individual leaves and stalk point clouds. Each leaf is assigned
-                a consistent color label across all plants based on its order from bottom
-                 to top (e.g., all first leaves are the same color, all second leaves are
-                  the same color, and so on). Similarly, all stalks are assigned a single,
-                   distinct color. A rigorous quality control process was undertaken to
-                    manually correct any errors in the segmentation and leaf ordering.
-                     This ensures accurate segmentation and consistent color labeling and
-                      facilitates precise leaf counting and structural analysis. 
-                      Additionally, the dataset includes metadata describing point cloud
-                       quality, the number of leaves, and the presence of tassels and maize
-                        cobs. To support diverse AI applications, we provide code that
-                         can sub-sample each point cloud to create a user-defined 
-                         resolution (100k, 50k, 10k points, etc.) through uniform 
-                         downsampling. All versions were manually quality-checked 
-                         to ensure the preservation of topology and plant structure. 
-                         This dataset lays the foundation for leveraging 3D data to 
-                         enable advanced applications in agricultural research, 
-                         particularly for maize phenotyping and plant structure studies.
+            The application of artificial intelligence (AI) in three-dimensional (3D) agricultural research,
+             particularly for maize, has been limited by the scarcity of large-scale, diverse datasets. 
+             While 2D image datasets are abundant, they fail to capture essential structural details such
+              as leaf architecture, plant volume, and spatial arrangements that 3D data provide. 
+              To address this limitation, we present AgriField3D (\href{https://baskargroup.github.io/AgriField3D/}{website}), a curated dataset 
+              of 3D point clouds of field-grown maize plants from a diverse genetic panel, designed to be 
+              AI-ready for advancing agricultural research. Our dataset comprises over 1,000 high-quality point 
+              clouds collected using a Terrestrial Laser Scanner, complemented by procedural models that provide 
+              structured, parametric representations of maize plants. These procedural models, generated using 
+              Non-Uniform Rational B-Splines (NURBS) and optimized via a two-step process combining Particle Swarm Optimization 
+              (PSO) and differentiable programming, enable precise, scalable reconstructions of leaf surfaces and plant architectures.
+            To enhance usability, we performed graph-based segmentation to isolate individual leaves and stalks, 
+            ensuring consistent labeling across all samples. We also conducted rigorous manual quality 
+            control on all datasets, correcting errors in segmentation, ensuring accurate leaf ordering, 
+            and validating metadata annotations. The dataset further includes metadata detailing plant morphology
+             and quality, alongside multi-resolution subsampled versions (100k, 50k, 10k points) optimized 
+             for various computational needs. By integrating point cloud data of field grown plants with 
+             high-fidelity procedural models and ensuring meticulous manual validation, AgriField3D provides 
+             a comprehensive foundation for AI-driven phenotyping, plant structural analysis, and 3D applications 
+             in agricultural research.
                           
           </p>
         </div>
@@ -629,7 +617,7 @@
       <pre><code>
         @inproceedings{kimara2025agriField3D,
           title={AgriField3D: A Curated 3D Point Cloud Dataset of Field-Grown Plants from a Maize Diversity Panel2}, 
-          author={Elvis Kimara1†, Mozhgan Hadadi3, Jackson Godbersen, Aditya Balu, Zaki Jubery, Adarsh Krishnamurthy, Patrick Schnable, Baskar Ganapathysubramanian},
+          author={Elvis Kimara1†, Mozhgan Hadadi3, Jackson Godbersen, Aditya Balu, Talukder Jubery, Yawei Li, Adarsh Krishnamurthy, Patrick Schnable, Baskar Ganapathysubramanian},
           booktitle={Arxiv},
           year={2025},
           primaryClass={cs.CV},
