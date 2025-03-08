@@ -268,11 +268,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-
             The application of artificial intelligence (AI) in three-dimensional (3D) agricultural research,
              particularly for maize, has been limited by the scarcity of large-scale, diverse datasets. 
              While 2D image datasets are abundant, they fail to capture essential structural details such
-              as leaf architecture, plant volume, and spatial arrangements that 3D data provide. 
+            as leaf architecture, plant volume, and spatial arrangements that 3D data provide. 
               To address this limitation, we present AgriField3D (\href{https://baskargroup.github.io/AgriField3D/}{website}), a curated dataset 
               of 3D point clouds of field-grown maize plants from a diverse genetic panel, designed to be 
               AI-ready for advancing agricultural research. Our dataset comprises over 1,000 high-quality point 
@@ -288,8 +287,7 @@
              for various computational needs. By integrating point cloud data of field grown plants with 
              high-fidelity procedural models and ensuring meticulous manual validation, AgriField3D provides 
              a comprehensive foundation for AI-driven phenotyping, plant structural analysis, and 3D applications 
-             in agricultural research.
-                          
+             in agricultural research.                        
           </p>
         </div>
       </div>
@@ -298,41 +296,7 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Image carousel -->
-<!--
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section> -->
-<!-- End image carousel -->
+
 
 
 <!-- data feature -->
@@ -344,25 +308,57 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <!-- First Image -->
+          <!-- Dataset -->
           <div class="publication-image" id="image-container-1">
             <img src="static/images/9Plants_raw3.png" alt="Sample" style="cursor: pointer; width: 80%; height: auto;">
           </div>
           <p class="description">
-            Figure 1: Sample from 1,045 quality-controlled 3D point clouds of diverse field-grown maize plants.
+            Figure 1: Samples from 1,045 3D point clouds of diverse field-grown maize plants in the AgriField3D dataset.
           </p>
           
-          <!-- Second Image -->
-          <div class="publication-image" id="image-container-2">
-            <img src="static/images/Procedural_Models_Samples.png" alt="Sample Image 2" style="cursor: pointer; width: 80%; height: auto;">
+          <!-- Annotated -->
+          <div class="columns is-centered" id="image-container-2">
+            <div class="column is-one-third">
+              <img src="static/images/Mo17_GT_color.gif" alt="Sample Gif 1" style="cursor: pointer; width: 100%; height: auto;">
+            </div>
+            <div class="column is-one-third">
+              <img src="static/images/B73_GT_color.gif" alt="Sample Gif 2" style="cursor: pointer; width: 100%; height: auto;">
+            </div>
+            <div class="column is-one-third">
+              <img src="static/images/CML238_GT_color.gif" alt="Sample Gif 3" style="cursor: pointer; width: 100%; height: auto;">
+            </div>
           </div>
           <p class="description">
-            <b\>Procedural_Models_Samples</b>, Top row: Workflow of the procedural model generation. Bottom row: Generated sample of the procedural models.
+          Samples from Organ-level annotations with detailed semantic and instance segmentation, enabling precise plant structure analysis.
+          </p>
+          
+          <!-- Procedural model -->
+          <div class="columns is-centered" id="image-container-2">
+            <div class="column is-one-third">
+              <img src="static/images/Mo17_NURBS_Surface.gif" alt="Sample Gif 1" style="cursor: pointer; width: 100%; height: auto;">
+            </div>
+            <div class="column is-one-third">
+              <img src="static/images/B73_NURBS_Surface.gif" alt="Sample Gif 2" style="cursor: pointer; width: 100%; height: auto;">
+            </div>
+            <div class="column is-one-third">
+              <img src="static/images/CML238_NURBS_Surface.gif" alt="Sample Gif 3" style="cursor: pointer; width: 100%; height: auto;">
+            </div>
+          </div>
+          <p class="description">
+            Samples from procedurally generated maize leaf models, providing a NURBS surface-based representation that is beneficial for downstream tasks
+          </p>
+
+          <!-- Data Density -->
+          <div class="publication-image" id="image-container-3">
+            <img src="static/images/combined_histograms.png" alt="Comparison Table" style="cursor: pointer; width: 80%; height: auto;">
+          </div>
+          <p class="description">
+            Multiple subsampled versions (100k, 50k, and 10k points per cloud), supporting a range of computational requirements.
           </p>
           
           <!-- Third Image -->
           <div class="publication-image" id="image-container-3">
-            <img src="static/images/tableMaize3.png" alt="Comparison Table" style="cursor: pointer; width: 80%; height: auto;">
+            <img src="static/images/tableMaize.jpg" alt="Comparison Table" style="cursor: pointer; width: 80%; height: auto;">
           </div>
           <p class="description">
             Comparison of AgriField3D dataset with existing datasets.
@@ -522,9 +518,9 @@
       <div class="content">
         <p>
           This work was supported by the AI Research Institutes program  
-          <a href="https://aiira.iastate.edu/" target="_blank" class="underline-link">AI Institute: for 
+          [<a href="https://aiira.iastate.edu/" target="_blank" class="underline-link">AI Institute: for 
             Resilient Agriculture (AIIRA)</a>, 
-          <code>Award No.2021-67021-35329</code>from the National Science Foundation and U.S. 
+          <code>Award No.2021-67021-35329</code>]from the National Science Foundation and U.S. 
           Department of Agriculture’s National Institute of Food and Agriculture. We acknowledge support 
           from  Iowa State University Plant Science Institute. YL was supported in part by NSF grants (DBI-1661475 and IOS-1842097)
            to PSS and others and a scholarship from the China Scholarship Council. 
@@ -567,7 +563,7 @@
 
                       <div class="column has-text-centered video-column">
                         <a href="https://scholar.google.com/citations?user=GNuXi6oAAAAJ&hl=en&oi=ao" target="_blank" style="border-bottom: none;">
-                            <span class="image"><img src="static/images/team/balu.jpg" alt="" style="width: 90%;" /></span>
+                            <span class="image"><img src="static/images/team/balu.jpeg" alt="" style="width: 90%;" /></span>
                             <span style="font-weight: bold;">Aditya Balu</span>
                         </a>
                       </div>
@@ -578,7 +574,7 @@
                   <div class="columns" style="max-width: 95%; padding-left: 10%;">
                     <div class="column has-text-centered video-column">
                       <a href="https://scholar.google.com/citations?user=P3h1SM0AAAAJ&hl=en" target="_blank" style="border-bottom: none;">
-                          <span class="image"><img src="static/images/team/zaki.png" alt="" style="width: 90%;" /></span>
+                          <span class="image"><img src="static/images/team/Zaki.png" alt="" style="width: 90%;" /></span>
                           <span style="font-weight: bold;">Talukder Jubery</span>
                       </a>
                     </div>
